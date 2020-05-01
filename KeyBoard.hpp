@@ -39,7 +39,6 @@ public:
     void Ku(char code);
     String KeyPadValue = "";
     float LastValue = 0;
-
 private:
     int WiFiSgIcon = 0;
     int WiFiIcon = 0;
@@ -64,7 +63,6 @@ private:
     char Key_Last;
     int Key_NPag = 0;
     boolean Key_Show = 0;
-    float LastValue = 0;
     bool StartCalc = true;
     boolean Volume_Mute = 1;
     long KeyTimer_Out;
