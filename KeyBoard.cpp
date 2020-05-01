@@ -3,7 +3,7 @@
 
 KeyBoard::KeyBoard(int rxPin, int txPin)
 {
-  Serial.print("KeyBoard \n");
+  Serial.print("Connect \n");
   Serial.printf("rxPin %d\n", rxPin);
   Serial.printf("rxPin %d\n", txPin);
   Serial2.begin(9600, SERIAL_8N1, rxPin, txPin);
@@ -766,7 +766,6 @@ void KeyBoard::Bind(void (*callback)(String,float))
       if (KeyPressed == 'Q')
       {
       }
-      Serial.println("KeyPadDisplay");
       this->SetStrValue(KeyPadValue);
       Serial2.write(KeyPadDisplay, sizeof(KeyPadDisplay));
       Serial2.write(BindKey(KeyPadDisplay, sizeof(KeyPadDisplay)));
